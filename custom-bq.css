@@ -1,0 +1,84 @@
+.twingkling-wDesc{
+  font-size: 15px;
+  width: auto;
+  height: auto;
+ 
+  }
+
+.twingkling-custom-svg {
+  display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: absolute; 
+
+     top: -.65rem; 
+
+     left: -1rem; 
+
+    height: 2.3rem;
+
+    width: 2.3rem;
+
+    fill: currentColor;
+
+    stroke: #ffffff;
+
+    overflow: hidden;
+
+    color: #ffffff;
+
+    background: #e91e63;
+
+    border-radius: 10% 20% 40%;
+  }
+
+.radius {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.watermelon-custom-bq {
+  box-shadow: 1px 1px 5px -2px #000;
+  display: flow-root;
+  position: relative;
+  padding: 1.3rem;
+  border-left: 5px solid #e91e63;
+  border-radius: 9px;
+  margin: 25px;
+  width: auto;
+  height: auto;
+}
+
+.watermelon-custom-bq::before {
+  content: "";
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  border-top: 5px solid transparent;
+  background: linear-gradient(45deg, #e91e63, transparent) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+.watermelon-custom-bq::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  border-bottom: 5px solid transparent;
+  background: linear-gradient(90deg, #e91e63, transparent) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  }
